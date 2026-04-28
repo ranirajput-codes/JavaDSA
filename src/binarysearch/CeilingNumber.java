@@ -9,6 +9,12 @@ public class CeilingNumber {
     }
 //    ceiling of a number. means Find the element, if not found return the smallest bigger element
         static int ceilingOfNumber(int [] arr , int target ){
+
+//        if the target is greater than the greatest number in the array
+            if (target > arr[arr.length-1]) {
+                return -1;
+            }
+
         int start = 0;
         int end = arr.length-1;
         while(start<=end){
