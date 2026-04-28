@@ -2,7 +2,7 @@ package binarysearch;
 
 public class CeilingNumber {
     public static void main(String[] args) {
-        int [] arr = {2,4,8,9,10,14,16,19,50};
+        int [] arr = {2,4,8,10,14,16,19,50};
         int target = 15;
         int ans = ceilingOfNumber(arr, target);
         System.out.println(ans);
