@@ -27,5 +27,7 @@ public class NextGreatestLetter {
         // remainder 2 ( same as the ans everytime).
         // and if the target is greater than the last element the start will become mid+1 = (the length of the array)
         //so when we will divide start(= to length) with length we will get the remainder 0 ( the first index).
+
+        //if we don't want to return start%letters.length so we can add another if condition like, if start==letters.length , return 0
     }
 }
