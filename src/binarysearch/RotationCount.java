@@ -56,7 +56,7 @@ public class RotationCount {
                 }
                 start++;
                 //check whether end is pivot
-                if(arr[end]<arr[end-1]){
+                if(end>0 && arr[end]<arr[end-1]){
                     return end-1;
                 }
                 end--;
