@@ -76,15 +76,14 @@ public class RotatedBinarySearch {
             //if elements at middle, start, end are equal then just skip the duplicates
             if(arr[mid]==arr[start] && arr[mid]==arr[end]){
                 //skip the duplicates
-
                 //Note: what if these elements at start and end were the pivot?
-                //check if the start is pivot
-                if(arr[start]>arr[start+1]){
+                //check if the start is Pivot
+                if(start<end && arr[start]>arr[start+1]){ //start+1<=end ==> start<end
                     return start;
                 }
                 start++;
                 //check whether end is pivot
-                if(arr[end]<arr[end-1]){
+                if(end>0 && arr[end]<arr[end-1]){  //end-1>=0 ==> end>0
                     return end-1;
                 }
                 end--;
